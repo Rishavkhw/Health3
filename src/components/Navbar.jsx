@@ -8,7 +8,8 @@ function Navbar() {
     <nav className=" shadow-md py-4 px-5 flex items-center justify-between">
       {/* Left: Logo */}
       <div className=" font-bold bg-clip-text text-transparent pl-25">
-        <span className="text-slate-400 font-mono text-3xl">Cogent</span><span className="text-slate-400 font-thin text-3xl">Health</span>
+        <span className="text-slate-400 font-mono text-3xl">Cogent</span>
+        <span className="text-slate-400 font-thin text-3xl">Health</span>
       </div>
 
       {/* Center: Navigation Links */}
@@ -19,7 +20,13 @@ function Navbar() {
         >
           Home
         </Link> */}
-                <Link
+        <Link
+          to="/dashboard"
+          className="text-1xl font-semibold text-gray-700 hover:text-slate-400 transition duration-300"
+        >
+          Dashboard
+        </Link>
+        <Link
           to="/about"
           className="text-1xl font-semibold text-gray-700 hover:text-slate-400 transition duration-300"
         >
@@ -51,8 +58,10 @@ function Navbar() {
         className="flex font-bold text-white bg-emerald-400 hover:bg-teal-400 rounded-4xl p-2 px-8 mr-25"
       >
         <span className="">Contact</span>
-             <FontAwesomeIcon icon={faTelegram} className="text-white text-2xl pl-1" />
-
+        <FontAwesomeIcon
+          icon={faTelegram}
+          className="text-white text-2xl pl-1"
+        />
       </Link>
     </nav>
   );

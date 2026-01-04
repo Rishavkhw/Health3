@@ -8,6 +8,7 @@ import Products from "./components/Products";
 import Blogs from "./components/Blogs";
 import Career from "./components/Career";
 import Contact from "./components/Contact";
+import Dashboard from "./components/pages/Dashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +28,16 @@ function App() {
         <>
           <Navbar />
           <Home />
+
+        </>
+      ),
+    },
+        {
+      path: "/dashboard",
+      element: (
+        <>
+          <Navbar />
+          <Dashboard />
 
         </>
       ),
